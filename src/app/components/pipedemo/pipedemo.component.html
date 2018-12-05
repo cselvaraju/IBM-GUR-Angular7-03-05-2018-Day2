@@ -1,0 +1,14 @@
+<div class="container">
+  <h5>Pipe Demo</h5>
+  <input type="text" [(ngModel)]="message" />
+  <p></p>
+  Your message is: {{ message | titlecase }}
+  <p></p>
+  Reversed message is: {{ message | reversetext }}
+  <p></p>
+  Today is: {{ today | date:'d/MM/yyyy' }}
+  <p></p>
+  The actor is: {{ actor | json }}
+  <p></p>
+  The price is: {{ price | currency:'\u20b9' }}
+</div>
